@@ -36,8 +36,8 @@ function startTimer() {
   }
 
   function startWhiteTimer() {
-    clearInterval(timer_WHITE); // Vor dem Starten sicherstellen, dass kein Timer läuft
-    clearInterval(timer_BLACK); // Stoppe auch den anderen Timer
+    clearInterval(timer_WHITE);
+    clearInterval(timer_BLACK);
     timer_WHITE = setInterval(() => {
         if (time_WHITE > 0) {
             time_WHITE--;
