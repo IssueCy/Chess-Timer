@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chess Timer</title>
+    <link rel="icon" href="img/chess-pawn-svgrepo-com.svg">
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+<body>
+
+    <div id="main-container">
+        <div id="manageButton-Container">
+            <button id="start-button" onclick="startTimer()">Start timer</button>
+            <button id="return-button" onclick="returnToHome()">Return</button>
+        </div>
+
+        <div id="panel-container">
+            <div id="playerTwo-container">
+                <button class="start-stopTime-buttons" id="timeButton_BLACK">15:00</button>
+                <span>Black</span>
+            </div>
+            
+            <div id="middleUtil-section">
+                <button class="util-buttons" id="pause-button" onclick="pauseTimers()"><img src="img/pause_16dp_E8EAED_FILL0_wght400_GRAD0_opsz20.svg" alt="pause icon"></button>
+                <button class="util-buttons" id="end-game-button" onclick="returnToHome()"><img src="img/cancel_16dp_EA3323_FILL0_wght400_GRAD0_opsz20.svg" alt="cancel icon"></button>
+            </div>
+
+            <div id="playerOne-container">
+                <button class="start-stopTime-buttons" id="timeButton_WHITE">14:58</button>
+                <span>White</span>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <script src="app.js"></script>
+</body>
+</html>
