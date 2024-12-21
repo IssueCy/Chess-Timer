@@ -68,6 +68,8 @@ if (button_WHITE) {
         startBlackTimer();
         button_WHITE.style.background = "rgba(0, 100, 0, 0.3)";
         button_BLACK.style.background = "darkgreen";
+        button_WHITE.disabled = true;
+        button_BLACK.disabled = false;
     });
 }
 
@@ -76,6 +78,8 @@ if (button_BLACK) {
         startWhiteTimer();
         button_BLACK.style.background = "rgba(0, 100, 0, 0.3)";
         button_WHITE.style.background = "darkgreen";
+        button_BLACK.disabled = true;
+        button_WHITE.disabled = false;
     });
 }
 
